@@ -4,14 +4,16 @@
 linux 工具，web界面。使用golang vue（基于vue-element-admin）开发，包含新闻，gocn，ssh，天气等功能。
 
 #### 软件架构
-软件架构说明
+本软件前端基于vue的vue-element-admin开发，感谢[panjiachen](https://panjiachen.gitee.io/vue-element-admin-site/zh/)！
+
+后端使用golang开发。。
 
 
 #### 安装教程
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1.  git clone https://gitee.com/reed_huts/gowork.git
+2.  cd gowork  
+3.  go run main.go 或者 go build 生成可执行文件  ./gowork
 
 #### 使用说明
 
