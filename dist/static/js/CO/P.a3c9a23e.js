@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["CO/P"],{"CO/P":function(t,e,i){"use strict";i.r(e);var n={name:"EditForm",components:{ArticleDetail:i("EXL7").a}},l=i("KHd+"),a=Object(l.a)(n,function(){var t=this.$createElement;return(this._self._c||t)("article-detail",{attrs:{"is-edit":!0}})},[],!1,null,null,null);a.options.__file="edit.vue";e.default=a.exports}}]);

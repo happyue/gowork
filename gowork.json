@@ -1,0 +1,29 @@
+{
+	"go": {
+		"Version"			  : "0.0.1",
+		"APIPoweredBy"        : "GoWork API",/*后台go加的X-Powered-By*/
+		"SiteName"            : "GoWork",      /*网站名称*/
+		"Host"                : "127.0.0.1",  /*网站域名*/
+		"ImgHost"             : "127.0.0.1",  /*图片服务器域名*/
+		"Env"                 : "development",        /*模式(开发，测试，产品)*/
+		"LogDir"              : "", /*日志文件所在的目录，如果不设的话，默认在项目目录下*/          
+		"APIPrefix"           : "/api", /*api服务请求前缀*/
+		"UploadImgDir"        : "/static/img",
+		"Port"                : 8023,                 /*go监听的端口*/
+		"TokenSecret"         : "Zya46iOiyBiYX8iLCHuYm4iy", /*TokenSecret，请修改*/
+		"TokenMaxAge"         : 86400, /*token多久过期，单位秒*/
+		"SessionSecret"		  : "Zya46iOiyBiYX8iLCHuYm4iy",
+  		"SessionMaxAge"		  : 86400,
+		"OpenRegister"			: true,
+		"LogLevel"				: "DEBUG",
+		"ShowSQL"				: false,
+		"SQLite"				: "${home}",
+		"MaxIdleConns" 			: 10,          /*空闲时最大的连接数*/
+		"MaxOpenConns"			: 50,          /*最大的连接数*/
+        "TablePrefix" 			: "gowork",
+        "QiniuAccessKey"        : "",
+        "QiniuSecretKey"        : "",
+        "QiniuBucket"           : "",
+        "QiniuExDomainName"     : ""
+	}
+}

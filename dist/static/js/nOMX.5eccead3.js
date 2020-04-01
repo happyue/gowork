@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([["nOMX"],{nOMX:function(e,t,n){"use strict";n.r(t);var a={name:"CreateForm",components:{ArticleDetail:n("EXL7").a}},i=n("KHd+"),l=Object(i.a)(a,function(){var e=this.$createElement;return(this._self._c||e)("article-detail",{attrs:{"is-edit":!1}})},[],!1,null,null,null);l.options.__file="create.vue";t.default=l.exports}}]);
