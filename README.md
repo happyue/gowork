@@ -2,6 +2,7 @@
 
 #### 介绍
 linux 工具，web界面。使用golang vue（基于vue-element-admin）开发，包含新闻，gocn，ssh，天气等功能。
+技术关键字：linux golang gin sqlite3 vue vue-element-admin xterm
 
 #### 软件架构
 本软件前端基于vue的vue-element-admin开发，感谢[panjiachen](https://panjiachen.gitee.io/vue-element-admin-site/zh/)！
@@ -11,7 +12,7 @@ linux 工具，web界面。使用golang vue（基于vue-element-admin）开发�
 
 #### 安装教程
 
-1.  git clone https://gitee.com/reed_huts/gowork.git
+1.  git clone git@github.com:happyue/gowork.git
 2.  cd gowork  
 3.  go run main.go 或者 go build 生成可执行文件  ./gowork
 
