@@ -225,6 +225,7 @@ func (sws *LogicSSHWsSession) ReceiveWsMsg() {
 
 //sendWebsocketInputCommandToSshSessionStdinPipe
 func (sws *LogicSSHWsSession) sendWebsocketInputCommandToSSHSessionStdinPipe(cmdBytes []byte) {
+	// log.Debug("cmdBytes:" + string(cmdBytes[:]))
 	if _, err := sws.stdinPipe.Write(cmdBytes); err != nil {
 		log.Error("ws cmd bytes write to ssh.stdin pipe failed")
 	}
@@ -246,6 +247,7 @@ func (sws *LogicSSHWsSession) SendComboOutput() {
 			}
 			bs := sws.comboOutput.Bytes()
 			if len(bs) > 0 {
+				// log.Debug("bs:" + string(bs[:]))
 				err := wsConn.WriteMessage(websocket.TextMessage, bs)
 				if err != nil {
 					log.Error("ssh sending combo output to webSocket failed")
@@ -287,4 +289,6 @@ func (sws *LogicSSHWsSession) Wait() {
 		// sws.exit <- true
 		close(sws.exit)
 	}
+	log.Debug("remote command to exit.")
+	close(sws.exit)
 }
